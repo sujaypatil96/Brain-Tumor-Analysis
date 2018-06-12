@@ -40,10 +40,10 @@ the tabs you can navigate to there. To explain this in detail:
 * Open the XAMPP control panel, and turn on the Apache web server.
 * At the same time, also navigate to where you installed MongoDB on your system. Fire up an instance of MongoDB by running the command  `mongod.exe` or just `mongod`.
 
-*Note:* You will find the JSON file which needs to be imported into imported into your database in the project folder. Create a MongoDB database first, create within it a collection and import the JSON file directly into the collection.
+*Note:* You will find the JSON file which needs to be imported into imported into your database from [here](https://drive.google.com/open?id=1a2npxkLT1z3ktv1B8t4zqkoOGbZHstQE). Create a MongoDB database first, create within it a collection and import the JSON file directly into the collection.
 
-* Now assuming you have followed all the steps as mentioned above, open any browser of your choice and type in the following URL (main_processing.php) — `http://localhost/DemoProject/Brain_Tumor_Analysis/public/main_processing.php`. Depending on the resources of your machine, it will take about 4 - 5 mins to execute the script.
-* Then run the process_arrays.php script immediately after `http://localhost/DemoProject/Brain_Tumor_Analysis/public/process_arrays.php`.
+* Now assuming you have followed all the steps as mentioned above, open any browser of your choice and execute the `main_processing.php` script. Depending on the resources of your machine, it will take about 4 - 5 mins to execute the script.
+* Then run the `process_arrays.php` script immediately after the above script finishes execution.
 * When both of these are finished running, you can then naviagte to the `index.html` page within the landing folder and play around with all the options built into the application.
 
 ### Existing Features
@@ -51,7 +51,7 @@ the tabs you can navigate to there. To explain this in detail:
 2. In the landing page you can find the main filter, that is, the cell type filter which is the most important filter for analysis.
 3. The project uses the [DataTables](https://github.com/DataTables/DataTables) project to display the data in a table format and also allow for fast regular expression (substring) based searching.
 4. You will find a button below every cell type called "generate visualizations", which will attempt to render important statistical visualizations, as requested by the user using a library called [Plotly](https://plot.ly/javascript/) for JavaScript.
-5. The Elasticsearch feature is still under development. To test it out, turn on the Elasticsearch service. Navigate to this location on your browser `http://localhost/calaca-project/_site/index.html`, where you can perform full text search querying on the data set.
+5. The Elasticsearch feature is still under development. To test it out, turn on the Elasticsearch service. Navigate to this location on your browser `index.html` from the calaca-project folder, where you can perform full text search querying on the data set.
 
 ### New Features
 An important visualization that is yet to be included is the **Kaplan Meier (KM) survival curve**. You can find a basic starting point for how you could start implementing the curve, in a great blog post on [Nick Strayer's Block](http://bl.ocks.org/nstrayer/4e613a109707f0487da87300097ca502).
