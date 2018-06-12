@@ -47,7 +47,11 @@ the tabs you can navigate to there. To explain this in detail:
 * When both of these are finished running, you can then naviagte to the `index.html` page within the landing folder and play around with all the options built into the application.
 
 ### Existing Features
-:TODO
+1. The data that you see in the JSON file is basically RNA-Seq data from the Barres Neurobiology lab at Stanford. You can download the [Barres Data Set](https://web.stanford.edu/group/barres_lab/brain_rnaseq.html) here. The data from the Excel sheet has been properly broken down, processed, stored in the database and exported as JSON for direct use.
+2. In the landing page you can find the main filter, that is, the cell type filter which is the most important filter for analysis.
+3. The project uses the [DataTables](https://github.com/DataTables/DataTables) project to display the data in a table format and also allow for fast regular expression (substring) based searching.
+4. You will find a button below every cell type called "generate visualizations", which will attempt to render important statistical visualizations, as requested by the user using a library called [Plotly](https://plot.ly/javascript/) for JavaScript.
+5. The Elasticsearch feature is still under development. To test it out, turn on the Elasticsearch service. Navigate to this location on your browser `http://localhost/calaca-project/_site/index.html`, where you can perform full text search querying on the data set.
 
 ### New Features
-:TODO
+An important visualization that is yet to be included is the **Kaplan Meier (KM) survival curve**. You can find a basic starting point for how you could start implementing the curve, in a great blog post on [Nick Strayer's Block](http://bl.ocks.org/nstrayer/4e613a109707f0487da87300097ca502).
