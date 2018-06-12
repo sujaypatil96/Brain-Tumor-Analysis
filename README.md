@@ -23,9 +23,9 @@ Technology Stack
 
 *Note:* Find the XAMPP stack for Windows download [link here](https://www.apachefriends.org/index.html).
 
-* There are some changes that need to be made in the `httpd.conf file` for Apache in order to integrate it with MongoDB.
+* There are some changes that need to be made in the `httpd.conf` file for Apache in order to integrate it with MongoDB.
 * You need to download the appropriate driver for your version of XAMPP and copy the .dll file to XAMPP.
-* Register mongo .dll file within php.ini, by adding the following line **extension=php_mongodb.dll**.
+* Register mongo .dll file within `php.ini`, by adding the following line **extension=php_mongodb.dll**.
 * To test if it worked — Restart XAMPP and refresh phpinfo.php page.
 Note: Find detailed instructions to perform the above in the [link here](https://learnedia.com/install-mongodb-configure-php-xampp-windows/).
 
