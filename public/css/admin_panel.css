@@ -1,0 +1,162 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-text-size-adjust: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { height: 101%; }
+body { font-family: Josefin Sans, Tahoma, Verdana, Arial, sans-serif; font-size: 62.5%; line-height: 1; padding-bottom: 65px; background: white; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+h1 {
+  font-family: 'Josefin Sans', Tahoma, Arial, sans-serif;
+  font-weight: normal;
+  font-size: 2.95em;
+  line-height: 1.2em;
+  letter-spacing: -.0.03em;
+  color: #383838;
+  margin-bottom: 16px;
+}
+
+p { font-size: 1.7em; line-height: 1.45em; margin-bottom: 15px; color: #434343; }
+
+a { color: #5b77a4; text-decoration: underline; }
+a:hover { color: #7d94bb; }
+
+
+#w {
+  display: block;
+  width: 1100px;
+  padding: 14px 15px;
+  margin: 0 auto;
+  margin-top: 45px;
+  padding-top: 0px;
+}
+
+#content {
+  display: block;
+  padding: 14px 20px;
+  background-color: #c7d2e2;
+  height: 75px;
+  width: 950px;
+}
+
+#logo { display: block; border: 1px solid #232323; border-bottom-width: 0; }
+#logobg {
+  display: block;
+  width: 100%;
+  height: 130px;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+/* top navigation */
+#navigation {
+  display: block;
+  height: 35px;
+  width: 950px;
+  background-color: #131313;
+  background-image: url("images/Light-Grey-Background.jpg");
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#202020), to(#131313));
+  background-image: -webkit-linear-gradient(top, #202020, #131313);
+  background-image: -moz-linear-gradient(top, #202020, #131313);
+  background-image: -ms-linear-gradient(top, #202020, #131313);
+  background-image: -o-linear-gradient(top, #202020, #131313);
+  background-image: linear-gradient(top, #202020, #131313);
+}
+
+#navigation ul { list-style: none; padding: 0px 7px; }
+
+#navigation ul li { display: inline; float: left; }
+#navigation ul li a {
+  display: block;
+  padding: 0 8px;
+  color: #fff;
+  font-size: 1.1em;
+  text-decoration: none;
+  line-height: 35px;
+  font-weight: bold;
+  margin-right: 6px;
+  text-shadow: 1px 1px 1px #000;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+#navigation ul li a:hover { color: #a8d6e7; }
+
+/* hidden fixed navigation */
+#fixedbar {
+  display: none;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 80px;
+  background: rgba(0,0,0,0.75);
+}
+
+#fixednav {
+  display: block;
+  width: 710px;
+  margin: 0 auto;
+  padding: 0px 25px;
+}
+
+#fixednav li { }
+
+#fixednav li a {
+  display: block;
+  float: left;
+  font-size: 1.75em;
+  font-weight: bold;
+  color: #96aed8;
+  line-height: 80px;
+  text-decoration: none;
+  padding: 0px 8px;
+  margin-right: 6px;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+}
+
+#fixednav li a:hover {
+  color: #fff;
+  background: rgba(0,0,0,0.3);
+}
+
+#head_logo {
+    height: 200px;
+    width: 200px;
+    position: relative;
+    left: 35%;
+}
+
+/*custom style for the vertical lines*/
+.vertical_line1 {
+  border-right: thick solid gray;
+  float: left;
+  padding-right: 20px;
+}
+
+.vertical_line2 {
+  border-left: thick solid gray;
+  float: right;
+  padding-left: 20px;
+}
