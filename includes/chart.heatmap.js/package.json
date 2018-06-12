@@ -1,0 +1,94 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "chart.heatmap.js",
+        "scope": null,
+        "escapedName": "chart.heatmap.js",
+        "name": "chart.heatmap.js",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\xampp\\htdocs\\DemoProject\\Brain_Tumor_Analysis\\includes"
+    ]
+  ],
+  "_from": "chart.heatmap.js@latest",
+  "_id": "chart.heatmap.js@0.0.1-alpha",
+  "_inCache": true,
+  "_location": "/chart.heatmap.js",
+  "_nodeVersion": "1.1.0",
+  "_npmUser": {
+    "name": "tmroyal",
+    "email": "thomas.m.royal@gmail.com"
+  },
+  "_npmVersion": "2.5.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "chart.heatmap.js",
+    "scope": null,
+    "escapedName": "chart.heatmap.js",
+    "name": "chart.heatmap.js",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/chart.heatmap.js/-/chart.heatmap.js-0.0.1-alpha.tgz",
+  "_shasum": "c2a725b4c19930c86eea88b2468acf5853b3a526",
+  "_shrinkwrap": null,
+  "_spec": "chart.heatmap.js",
+  "_where": "C:\\xampp\\htdocs\\DemoProject\\Brain_Tumor_Analysis\\includes",
+  "author": {
+    "name": "Thomas Royal"
+  },
+  "bugs": {
+    "url": "https://github.com/tmroyal/Chart.HeatMap/issues"
+  },
+  "dependencies": {},
+  "description": "A heat map extension for chart.js",
+  "devDependencies": {
+    "chart.js": "^1.0.2",
+    "jshint": "latest",
+    "uglify-js": "^1.3.5"
+  },
+  "directories": {},
+  "dist": {
+    "shasum": "c2a725b4c19930c86eea88b2468acf5853b3a526",
+    "tarball": "https://registry.npmjs.org/chart.heatmap.js/-/chart.heatmap.js-0.0.1-alpha.tgz"
+  },
+  "gitHead": "6e99f4fd125841c1706b08a5806bdf1449e8b1ee",
+  "homepage": "https://github.com/tmroyal/Chart.HeatMap",
+  "keywords": [
+    "chart.js",
+    "heat map"
+  ],
+  "license": "MIT",
+  "main": "dst/Chart.HeatMap.S.js",
+  "maintainers": [
+    {
+      "name": "tmroyal",
+      "email": "thomas.m.royal@gmail.com"
+    }
+  ],
+  "name": "chart.heatmap.js",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tmroyal/Chart.HeatMap.git"
+  },
+  "scripts": {
+    "build": "npm run build:plugin & npm run build:standalone",
+    "build:plugin": "npm run concat:plugin && uglifyjs dst/Chart.HeatMap.js > dst/Chart.HeatMap.min.js",
+    "build:standalone": "npm run concat:standalone && uglifyjs dst/Chart.HeatMap.S.js > dst/Chart.HeatMap.S.min.js",
+    "clean": "rm -r dst/*",
+    "concat:plugin": "cat csscolorparser.js ColorManager.js Chart.HeatMap.js > dst/Chart.HeatMap.js",
+    "concat:standalone": "cat ./node_modules/chart.js/src/Chart.Core.js csscolorparser.js ColorManager.js Chart.HeatMap.js > dst/Chart.HeatMap.S.js",
+    "lint": "jshint Chart.HeatMap.js && jshint ColorManager.js",
+    "test": "echo \"No tests specified \n\" && exit 0"
+  },
+  "version": "0.0.1-alpha"
+}
