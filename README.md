@@ -46,6 +46,8 @@ the tabs you can navigate to there. To explain this in detail:
 * Then run the `process_arrays.php` script immediately after the above script finishes execution.
 * When both of these are finished running, you can then naviagte to the `index.html` page within the landing folder and play around with all the options built into the application.
 
+*Note:* In order to import the above JSON data into elasticsearch and index the data, you can use this great npm package called [elastic-import](https://www.npmjs.com/package/elastic-import). You can follow instructions to import data into elasticsearch [here](http://rubenjgarcia.es/import-data-to-elasticsearch-mongodb-json/).
+
 ### Existing Features
 1. The data that you see in the JSON file is basically RNA-Seq data from the Barres Neurobiology lab at Stanford. You can download the [Barres Data Set](https://web.stanford.edu/group/barres_lab/brain_rnaseq.html) here. The data from the Excel sheet has been properly broken down, processed, stored in the database and exported as JSON for direct use.
 2. In the landing page you can find the main filter, that is, the cell type filter which is the most important filter for analysis.
