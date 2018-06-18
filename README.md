@@ -48,6 +48,8 @@ the tabs you can navigate to there. To explain this in detail:
 
 *Note:* In order to import the above JSON data into elasticsearch and index the data, you can use this great npm package called [elastic-import](https://www.npmjs.com/package/elastic-import). You can follow instructions to import data into elasticsearch [here](http://rubenjgarcia.es/import-data-to-elasticsearch-mongodb-json/).
 
+* To test the full-text search feature (which employs its own ranking algorithm), turn on the Elasticsearch service by navigating to the installed location and running the executable, or by searching for the elasticsearch service under the services tab in the Windows control panel. 
+
 ### Existing Features
 1. The data that you see in the JSON file is basically RNA-Seq data from the Barres Neurobiology lab at Stanford. You can download the [Barres Data Set](https://web.stanford.edu/group/barres_lab/brain_rnaseq.html) here. The data from the Excel sheet has been properly broken down, processed, stored in the database and exported as JSON for direct use.
 2. In the landing page you can find the main filter, that is, the cell type filter which is the most important filter for analysis.
